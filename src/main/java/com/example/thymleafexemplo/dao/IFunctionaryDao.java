@@ -8,8 +8,8 @@ public interface IFunctionaryDao {
 
     public List<Functionary> findAll();
     public Functionary findById(long id);
-    public Functionary update(long id, Functionary functionary);
-    public Functionary delete(long id);
-    public Functionary save(Functionary functionary);
+    public boolean update(long id, Functionary functionary);
+    public boolean deleteById(long id);
+    public Functionary insert(Functionary functionary);
 
 }
